@@ -1,0 +1,33 @@
+.title-container {
+  /*background-color: lightcoral;*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0px 30px 0px;
+}
+
+.left-icon,
+.right-icon {
+  /*background-color: lightblue;*/
+  text-align: center;
+  cursor: pointer;
+  margin: 0px 70px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.left-icon img,
+.right-icon img {
+  height: 40px;
+}
+
+.title-img {
+  height: 350px;
+  transition: height 0.75s;
+}
+
+/*********** Animation ***********/
+
+.img-shrink {
+  height: 100px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+  <header>
+    <!--Top bar info-->
+    <title>Tic-Tac-Toe</title>
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="Asset/Image/favicon.ico"
+    />
+
+    <!--Import all CSS files-->
+    <link rel="stylesheet" href="/Style/0_general.css" />
+    <link rel="stylesheet" href="/Style/1_title.css" />
+    <link rel="stylesheet" href="/Style/2_play.css" />
+    <link rel="stylesheet" href="/Style/3_choose.css" />
+    <link rel="stylesheet" href="/Style/4_status.css" />
+    <link rel="stylesheet" href="/Style/5_game.css" />
+    <link rel="stylesheet" href="/Style/6_alert.css" />
+    <link rel="stylesheet" href="/Style/7_msg.css" />
+
+    <!--Custom font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+
+  <body>
+    <!--------------- 1) Title Section  -------------->
+    <div class="title-container">
+      <div id="left-icon" class="hide">
+        <img src="Asset/Icon/home.png" />
+        <div>Home</div>
+      </div>
+
+      <img id="title-img" class="title-img" src="Asset/Image/title logo.png" />
+
+      <div id="right-icon" class="hide">
+        <img src="Asset/Icon/reset-score.png" />
+        <div>Reset</div>
+      </div>
+    </div>
+
+    <!--------------- 2) Play Section  -------------->
+    <button id="play-button" class="play-button">Play</button>
+
+    <!--------------- 3) Choose Section  -------------->
+    <div id="choose-container" class="hide">
+      <fieldset>
+        <legend>Choose your opponent</legend>
+        <div>
+          <button id="button-1" class="button-1">Player vs Player</button>
+          <button id="button-2" class="button-2">Player vs Computer</button>
+        </div>
+      </fieldset>
+    </div>
+
+    <!--------------- 4) Status Section  -------------->
+    <div id="status-container" class="hide">
+      <div id="left-corner" class="left-corner">X</div>
+
+      <div id="left-status" class="left-status">
+        <div id="left-player"></div>
+        <div id="left-score"></div>
+      </div>
+
+      <div id="right-status" class="right-status">
+        <div id="right-player"></div>
+        <div id="right-score"></div>
+      </div>
+
+      <div id="right-corner" class="right-corner">O</div>
+    </div>
+
+    <!--------------- 5) Game Section  -------------->
+    <div id="game-container" class="hide">
+      <div id="blur-back" class="hide">
+        <div id="alert-msg" class="alert-msg"></div>
+      </div>
+
+      <div class="grid-3X3">
+        <div id="p00"></div>
+        <div id="p01" class="y-border"></div>
+        <div id="p02"></div>
+
+        <div id="p10" class="x-border"></div>
+        <div id="p11" class="y-border x-border"></div>
+        <div id="p12" class="x-border"></div>
+
+        <div id="p20"></div>
+        <div id="p21" class="y-border"></div>
+        <div id="p22"></div>
+      </div>
+    </div>
+
+    <!--------------- 6) Message Section  -------------->
+
+    <div id="msg-container" class="hide"></div>
+
+    <div id="overlay" class="hide"></div>
+
+
+    <script src="Scripts/variable.js"></script>
+    <script src="Scripts/initialize.js"></script>
+    <script src="Scripts/navigation.js"></script>
+    <script src="Scripts/game.js"></script>
+    <script src="Scripts/com_move.js"></script>
+  </body>
+</html>

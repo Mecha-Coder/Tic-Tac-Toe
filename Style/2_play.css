@@ -1,0 +1,25 @@
+.play-button {
+  display: block;
+  margin: auto;
+  font-family: Bebas Neue;
+  padding: 2px 30px;
+  font-size: 40px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 10px 0px rgb(67, 108, 195);
+  cursor: pointer;
+  letter-spacing: normal;
+  transition: letter-spacing 0.3s;
+  margin-bottom: 30px;
+}
+
+.play-button:hover {
+  letter-spacing: 7px;
+  background-color: rgb(132, 168, 246);
+  color: white;
+}
+
+.play-button:active {
+  transform: translateY(6px);
+  box-shadow: 0px 4px 0px rgb(67, 108, 195);
+}

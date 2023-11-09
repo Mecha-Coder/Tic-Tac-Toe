@@ -1,0 +1,10 @@
+.msg-container {
+  background-color: rgb(62, 62, 62);
+  padding: 10px 50px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 22px;
+  line-height: 40px;
+  width: 400px;
+  margin: auto;
+}

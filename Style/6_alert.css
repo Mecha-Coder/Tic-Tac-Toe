@@ -1,0 +1,40 @@
+.blur-back {
+  position: absolute;
+  display: flex;
+  background-color: rgba(28, 28, 28, 0.95);
+  align-items: center;
+  justify-content: center;
+  width: 434px;
+  height: 434px;
+}
+
+.alert-msg {
+  background-color: white;
+  border-radius: 30px;
+  height: 200px;
+  width: 380px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.style-msg {
+  display: grid;
+  grid-template-columns: 340px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.style-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.style-button button {
+  font-size: 16px;
+  padding: 6px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(40, 38, 38);
+  font-family: sans-serif;
+  color: white;
+}
+
+/******* Transition ********/
+
+.hide {
+  display: none;
+}
+
+.overlay{
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1001;
+}
