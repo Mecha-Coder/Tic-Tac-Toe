@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+  <header>
+    <title>Tie Tac Toe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <style>
+      .grid-container{
+        height: 360px;
+        width: 360px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        color: white;
+       
+        
+      }
+
+      .box{
+        height: 120px;
+        width: 120px;
+        font-size:100px;
+        background-color: transparent;
+        border: none;
+        transition: font-size 0.3s;
+        color:white
+      }
+
+      .box:active{
+        font-size: 1px;
+      }
+
+      .b1-0,.b1-1,.b1-2{
+        border-top: 6px solid greenyellow;
+        border-bottom: 6px solid greenyellow;
+      }
+
+      .b0-1,.b1-1,.b2-1{
+        border-left: 6px solid greenyellow;
+        border-right: 6px solid greenyellow;
+      }
+
+      body{
+        font-family: 'Roboto', sans-serif;
+        background-color: rgb(40, 38, 38);
+        text-align: center;
+
+      }
+
+      .lock{
+        pointer-events: none;
+      }
+
+      .grid-player{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 360px;
+        margin:auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border: 1px Solid white;
+      }
+
+      .player1{
+        background-color: yellow;
+        padding:10px;
+      }
+
+      .player2{
+        background-color: aqua;
+        padding:10px;
+      }
+
+      .now{
+        background-color: transparent;
+        color: rgb(91, 87, 87);
+      }
+
+      .markRed{
+        color: red;
+      }
+
+      .winner{
+        color: white;
+        background-color: rgb(79, 78, 78);
+        padding: 20px;
+        width: 200px;
+        margin: auto;
+        margin-top: 40px;
+        opacity: 0;
+      }
+
+      .appear{
+        opacity: 1;
+      }
+
+    </style>
+  </header>
+
+  <body>
+    <h1 style="color: white;">Tic Tac Toe Game</h1>
+    
+    <div class="grid-player">
+      <div class="player1">Player 1 (X)</div>
+      <div class="player2">Player 2 (O)</div>
+    </div>
+
+    <div class="grid-container">
+      <button class = "box b0-0"></button>
+      <button class = "box b0-1"></button>
+      <button class = "box b0-2"></button>
+
+      <button class = "box b1-0"></button>
+      <button class = "box b1-1"></button>
+      <button class = "box b1-2"></button>
+
+      <button class = "box b2-0"></button>
+      <button class = "box b2-1"></button>
+      <button class = "box b2-2"></button>
+    </div>
+
+    <div class="winner"><div>
+
+
+    <script src="logic.js"></script>
+  </body>
+
+</html>
