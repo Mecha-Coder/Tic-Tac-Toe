@@ -1,4 +1,4 @@
-### 🎮 Tie-Tac-Toe
+### 🎮 Tic-Tac-Toe
 
 This is a Tic-Tac-Toe game created from HTML, CSS and JavaScript. Players can challenge each other or test their skills against a computer opponent.
 
