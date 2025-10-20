@@ -15,7 +15,7 @@ This is a Tic-Tac-Toe game created from HTML, CSS and JavaScript. Players can ch
 #### ⚙️ How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Mecha-Coder/Simple-Todo-List
+   git clone https://github.com/Mecha-Coder/Tic-Tac-Toe
    ```
 2. Navigate or `cd` into the folder
 3. Then, open the `main.html` file in your browser
